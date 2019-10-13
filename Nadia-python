@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+with open('/home/user/Downloads/sequencia.txt', 'r') as arq:
+    dados= arq.readlines()
+
+#print (dados)
+n = np.array(dados, dtype=int)
