@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-with open('/home/user/Downloads/sequencia.txt', 'r') as arq:
+with open('https://github.com/nkappaun/intro_EngComp/blob/master/sequencia-num', 'r') as arq:
     dados= arq.readlines()
 
-#print (dados)
 n = np.array(dados, dtype=int)
+
+plt.hist(n, bins=10)
+plt.show()
